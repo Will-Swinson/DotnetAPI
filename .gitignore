@@ -1,0 +1,61 @@
+# Build Folders (you can keep bin if you'd like to check binaries in)
+bin/
+obj/
+[Bb]uild/
+[Bb]in/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Logs
+*.log
+
+# Web specific
+ClientBin/
+csx/
+*.pdb
+
+# Uncomment if necessary however generally it will be ignored by windows already
+# *.lnk
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Tooling
+*.ipch
+*.aps
+*.ncb
+*.opendb
+
+
+# ENV Files
+.ENV
+./appsettings.json
