@@ -1,6 +1,6 @@
 namespace DotnetAPI.Models
 {
-  public partial class UserForRegistration
+  public class UserForRegistration
   {
     public string Email { get; set; } = "";
     public string Password { get; set; } = "";

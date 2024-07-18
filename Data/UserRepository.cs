@@ -56,5 +56,47 @@ namespace DotnetAPI.Data
 
     }
 
+    public IEnumerable<UserJobInfo> GetUsersJobInfo()
+    {
+      IEnumerable<UserJobInfo> usersJobInfo = _entityFramework.UserJobInfo.ToList<UserJobInfo>();
+      return usersJobInfo;
+    }
+
+    public UserJobInfo GetUserJobInfoById(int userId)
+    {
+      UserJobInfo? userJobInfo = _entityFramework.UserJobInfo
+      .Where(u => u.UserId == userId)
+      .FirstOrDefault<UserJobInfo>();
+
+      if (userJobInfo != null)
+      {
+        return userJobInfo;
+      }
+
+      throw new Exception("User Job Info not found");
+
+    }
+
+     public IEnumerable<UserSalary> GetUsersSalary()
+    {
+      IEnumerable<UserSalary> usersSalaries = _entityFramework.UserSalary.ToList<UserSalary>();
+      return usersSalaries;
+    }
+
+    public UserSalary GetUserSalaryById(int userId)
+    {
+      UserSalary? userSalary = _entityFramework.UserSalary
+      .Where(u => u.UserId == userId)
+      .FirstOrDefault<UserSalary>();
+
+      if (userSalary != null)
+      {
+        return userSalary;
+      }
+
+      throw new Exception("User Salary not found");
+
+    }
+
   }
 }
